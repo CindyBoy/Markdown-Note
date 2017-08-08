@@ -76,7 +76,7 @@ useradd   [选项]   <username>
 | -d   | 设置口令上一次修改的日期 |
 
 
-**禁用和回复账号**
+>**禁用和回复账号**
 ```bash 
 [root@uname ~] passwd -l user1       //禁用账户
 [root@uname ~] tail -l /etc/shadow   //查看禁用的账户
@@ -89,7 +89,7 @@ useradd   [选项]   <username>
 #创建和删除群组用groupadd 和 groupdel (后加群组名)
 ```
 
-###组群管理
+>###组群管理
 
 ###维护组群账户
 **groupmod 命令选项**　
@@ -99,7 +99,7 @@ useradd   [选项]   <username>
 | -n group-name    | 把组群的名称改为group-name |
 | -o                        | 强制接受更改的组的GID为重复的号码 |
 
-###为组群添加账户
+>###为组群添加账户
 gpasswd   [选项]    [用户]    [组]
 **gpasswd 命令选项**　
 | 参数     |    说明 | 
@@ -112,4 +112,17 @@ gpasswd   [选项]    [用户]    [组]
 ```bash 
 [root@uname ~]  gpasswd -a user1 testgroup
 ```
+
+>## 常用的账户管理命令
+| 命令     |    说明 | 
+| :-------- |: --------| 
+| vipw  | 可用于直接对账户文件/etc/passwd 进行编辑 |
+| vigr   | 可用于直接对组群文件/etc/group 进行编辑 |
+| pwck  | 用于验证用户账户文件认证信息的完整性 |
+| grpck  | 用于验证用户组群文件认证信息的完整性 |
+| id  | 显示一个用户的UID和GID以及用户所属的组列表， eg: id user1 |
+| finger、chfn、chsh  | 查看用户的相关信息， 参数有：-l, -m, -s, -p |
+| whoami  |  |
+| newgrp   |  |
+
 
