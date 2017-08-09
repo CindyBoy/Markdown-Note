@@ -122,7 +122,7 @@ gpasswd   [选项]    [用户]    [组]
 | grpck  | 用于验证用户组群文件认证信息的完整性 |
 | id  | 显示一个用户的UID和GID以及用户所属的组列表， eg: id user1 |
 | finger、chfn、chsh  | 查看用户的相关信息， 参数有：-l, -m, -s, -p |
-| whoami  |  |
-| newgrp   |  |
+| whoami  | 显示当前用户名 |
+| newgrp   | 转换用户的当前组到指定的主组群 |
 
 
